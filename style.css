@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* font-family: 'Hanken Grotesk', sans-serif; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5465;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    width: 590px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header-info {
+    display: flex;
+}
+
+#notif-count {
+    background-color: rgb(51, 51, 233);
+    border-radius: 3px;
+    min-width: 24%;
+    text-align: center;
+    height: 100%;
+    margin-left: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.header .mark-as-read {
+    font-size: 0.8rem;
+    border: none;
+    color: hsl(202, 63%, 26%);
+    background: none;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.header .mark-as-read:hover {
+    cursor: pointer;
+    background-color: hsla(202, 44%, 85%, 0.4);
+    scale: 1.04;
+}
+
+.notif-panel {
+    margin-top: 33px;
+    flex-direction: column;
+    max-height: 400px;
+    overflow: scroll
+}
+
+.notif,
+.notif-read {
+
+    margin-bottom: 4px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.notif {
+    background-color: hsl(210, 85%, 95%);
+}
+
+.notif-read {
+    background-color: hsl(210, 40%, 48%);
+}
+
+.notif-main {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 2px;
+}
+
+.notif-text-data {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.notif img,.notif-read img {
+    height: 80%;
+    margin-right: 4px;
+}
+
+.notif-main img {
+    margin-right: 4px;
+}
+
+.name-tag {
+    font-weight: 800;
+    color: hsl(218, 15%, 25%);
+}
+
+
+
+.notif-text,
+.notif-time,
+.name-tag {
+    font-size: 0.8rem;
+
+}
+
+.notif-text {
+    color: hsl(200, 4%, 55%);
+}
+
+.notif-time {
+    color: hsl(211, 14%, 64%);
+}

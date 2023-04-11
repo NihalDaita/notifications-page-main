@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=Hanken+Grotesk:wght@500;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-info"><b>Notifications</b>
+        <button id="notif-count" onchange="updateReadCount()" onclick="updateReadCount()">
+          0
+        </button>
+      </div>
+      <button class="mark-as-read" onclick="createNotif()">Create Notification</button>
+      <button class="mark-as-read" onclick="markAllAsRead()">Mark all as read</button>
+    </div>
+    <div class="notif-panel">
+      <div class="notif" id="notif-1" onclick="setToRead(id)">
+        <div class="notif-main">
+          <img src="assets/images/avatar-mark-webber.webp">
+          <div class="notif-text-data">
+            <div class="notif-text">
+              <name class="name-tag">Mark Webber</name> reacted to your recent post My first tournament today!
+            </div>
+            <div class="notif-time">1m ago</div>
+          </div>
+        </div>
+
+        <img src="assets/images/image-chess.webp">
+
+      </div>
+      <div class="notif" id="notif-2" onclick="setToRead(id)">
+        <div class="notif-main">
+          <img src="assets/images/avatar-mark-webber.webp">
+          <div class="notif-text-data">
+            <div class="notif-text">
+              <name class="name-tag">Mark Webber</name> reacted to your recent post My first tournament today!
+            </div>
+            <div class="notif-time">1m ago</div>
+          </div>
+        </div>
+
+        <img src="assets/images/image-chess.webp">
+
+      </div><div class="notif" id="notif-3" onclick="setToRead(id)">
+        <div class="notif-main">
+          <img src="assets/images/avatar-mark-webber.webp">
+          <div class="notif-text-data">
+            <div class="notif-text">
+              <name class="name-tag">Mark Webber</name> reacted to your recent post My first tournament today!
+            </div>
+            <div class="notif-time">1m ago</div>
+          </div>
+        </div>
+
+        <img src="assets/images/image-chess.webp">
+
+      </div>
+      <!-- <div class="notification">Angela Gray followed you
+      5m ago</div>
+    <div class="notification">Jacob Thompson has joined your group Chess Club
+      1 day ago</div>
+    <div class="notification">Rizky Hasanuddin sent you a private message
+      5 days ago</div>
+    <div class="notification">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+      I'm already having lots of fun and improving my game.</div>
+    <div class="notification">Kimberly Smith commented on your picture
+      1 week ago</div>
+    <div class="notification">Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win
+      rate
+      2 weeks ago</div>
+    <div class="notification">Anna Kim left the group Chess Club
+      2 weeks ago</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
